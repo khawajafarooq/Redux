@@ -1,7 +1,10 @@
-# Redux
-Experimenting Redux Architecture in iOS
+# Redux - Unidirectional Data Flow 🔮
+This project is based on Redux architecture using the cliché example of Login screen. The purpose of this app is to POC Redux in iOS.
 
-## Setup 
+**Pro Tip**: Try to forget about MV* architecture while working with Redux.
+
+## Setup Dependencies
+Using `ReSwift` to setup the Redux.
 ```
 pod install
 ```
