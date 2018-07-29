@@ -1,0 +1,12 @@
+#Ignore Pods
+Pods/
+
+#Ignore workspace
+*.xcworkspace
+
+# Xcode settings
+xcuserdata/
+
+# Ignore Others
+Others/
+*.xcuserstate
