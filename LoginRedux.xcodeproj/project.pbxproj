@@ -18,6 +18,7 @@
 		0315EE7A210CDEBB00927F3F /* LoginHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0315EE79210CDEBB00927F3F /* LoginHelpers.swift */; };
 		0315EE7C210CDEF100927F3F /* LoginReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0315EE7B210CDEF100927F3F /* LoginReducer.swift */; };
 		0315EE7F210CF3D200927F3F /* LoginStateTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0315EE7E210CF3D200927F3F /* LoginStateTranslator.swift */; };
+		038A5AB8210DCBB400C1E363 /* LoginViewControlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038A5AB7210DCBB400C1E363 /* LoginViewControlerTests.swift */; };
 		08974617D825ED85EFC8FC9A /* Pods_LoginRedux.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4F2A747708C636AF271716E /* Pods_LoginRedux.framework */; };
 		094674448491251CE138C468 /* Pods_LoginReduxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81214DA8F51F4A4E086A031F /* Pods_LoginReduxTests.framework */; };
 /* End PBXBuildFile section */
@@ -48,6 +49,7 @@
 		0315EE79210CDEBB00927F3F /* LoginHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginHelpers.swift; sourceTree = "<group>"; };
 		0315EE7B210CDEF100927F3F /* LoginReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginReducer.swift; sourceTree = "<group>"; };
 		0315EE7E210CF3D200927F3F /* LoginStateTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginStateTranslator.swift; sourceTree = "<group>"; };
+		038A5AB7210DCBB400C1E363 /* LoginViewControlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControlerTests.swift; sourceTree = "<group>"; };
 		074CC28295FB465A1C9AC0B9 /* Pods-LoginRedux.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginRedux.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoginRedux/Pods-LoginRedux.release.xcconfig"; sourceTree = "<group>"; };
 		81214DA8F51F4A4E086A031F /* Pods_LoginReduxTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginReduxTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		867B7B5C3E71A52B4C5C13B4 /* Pods-LoginReduxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginReduxTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoginReduxTests/Pods-LoginReduxTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 			children = (
 				0315EE6A210CDBDD00927F3F /* LoginReduxTests.swift */,
 				0315EE6C210CDBDD00927F3F /* Info.plist */,
+				038A5AB7210DCBB400C1E363 /* LoginViewControlerTests.swift */,
 			);
 			path = LoginReduxTests;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0315EE6B210CDBDD00927F3F /* LoginReduxTests.swift in Sources */,
+				038A5AB8210DCBB400C1E363 /* LoginViewControlerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

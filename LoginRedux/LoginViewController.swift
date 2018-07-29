@@ -12,12 +12,12 @@ import ReSwift
 class LoginViewController: UIViewController {
 
     // MARK:- Outlets
-    @IBOutlet weak private var usernameTextField: UITextField!
-    @IBOutlet weak private var usernameErrorLabel: UILabel!
-    @IBOutlet weak private var passwordTextField: UITextField!
-    @IBOutlet weak private var passwordErrorLabel: UILabel!
-    @IBOutlet weak private var loginButton: UIButton!
-    @IBOutlet weak private var loginErrorLabel: UILabel!
+    @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var usernameErrorLabel: UILabel!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var passwordErrorLabel: UILabel!
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var loginErrorLabel: UILabel!
     
     // MARK:- Properties
     let mainStore = Store<LoginState>(
@@ -101,6 +101,7 @@ extension LoginViewController: StoreSubscriber {
         passwordErrorLabel.text = state.passwordErrorText
         loginButton.isEnabled = state.loginButtonEnable
         loginErrorLabel.text = state.loginErrorText
+        loginErrorLabel.isHidden = state.loginErrorHidden
     }
 }
 
