@@ -1,6 +1,10 @@
 # Redux
 Experimenting Redux Architecture in iOS
 
+## Setup 
+```
+pod install
+```
 
 ## Author 🙏🏻
 **Web**: [Khawaja Farooq](http://khawajafarooq.github.io)
