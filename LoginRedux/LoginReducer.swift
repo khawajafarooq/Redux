@@ -19,15 +19,23 @@ func loginReducer(action: Action, state: LoginState?) -> LoginState {
     // username state modeling
     case .typingUsername(let textState)?:
         switch textState {
-        case .valid: state.username = .valid
-        case .invalid (let error): state.username = .invalid(error)
+        case .valid:
+            state.username = .valid
+            
+        case .invalid (let error):
+            state.username = .invalid(error)
+            state.login = nil
         }
     
     // password state modeling
     case .typingPassword(let textState)?:
         switch textState {
-        case .valid: state.password = .valid
-        case .invalid (let error): state.password = .invalid(error)
+        case .valid:
+            state.password = .valid
+            
+        case .invalid (let error):
+            state.password = .invalid(error)
+            state.login = nil
         }
     
     // login state modeling

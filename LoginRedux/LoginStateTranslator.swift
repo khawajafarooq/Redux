@@ -41,9 +41,7 @@ class LoginStateTranslator {
         modelLoginState(state)
     }
     
-    private func defaultState() {
-        
-    }
+    
     private func modelUsernameState(_ state: LoginState) {
         switch state.username {
         case .none:
@@ -92,32 +90,19 @@ class LoginStateTranslator {
             
         case .success(let login)?:
             if login {
-                usernameErrorHidden = true
-                passwordErrorHidden = true
                 loginErrorHidden = true
                 loginButtonEnable = false
                 loginErrorText = nil
-                usernameErrorText = nil
-                passwordErrorText = nil
             } else {
-                usernameErrorHidden = true
-                passwordErrorHidden = true
                 loginErrorHidden = false
                 loginButtonEnable = true
                 loginErrorText = "Failed to login"
-                usernameErrorText = nil
-                passwordErrorText = nil
             }
             
         case .failure(let error)?:
-            
-            usernameErrorHidden = true
-            passwordErrorHidden = true
             loginErrorHidden = false
             loginButtonEnable = true
             loginErrorText = error.localizedDescription
-            usernameErrorText = nil
-            passwordErrorText = nil
         }
     }
 }
